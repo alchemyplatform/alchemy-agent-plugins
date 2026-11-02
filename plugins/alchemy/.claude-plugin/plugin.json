@@ -9,7 +9,7 @@
     "url": "https://www.alchemy.com"
   },
   "homepage": "https://docs.alchemy.com/docs/alchemy-mcp-server",
-  "repository": "https://github.com/alchemyplatform/alchemy-claude-plugin",
+  "repository": "https://github.com/alchemyplatform/alchemy-agent-plugins",
   "icon": "./assets/alchemy.png",
   "documentationUrl": "https://www.alchemy.com/docs/alchemy-claude-plugin",
   "supportUrl": "https://www.alchemy.com/support",

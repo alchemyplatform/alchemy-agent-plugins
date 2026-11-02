@@ -11,7 +11,7 @@ This repository is a **plugin marketplace**. It contains the Claude Code plugin 
 
 ```bash
 # In Claude Code:
-/plugin marketplace add alchemyplatform/alchemy-claude-plugin
+/plugin marketplace add alchemyplatform/alchemy-agent-plugins
 /plugin install alchemy@alchemy
 ```
 
