@@ -10,7 +10,7 @@ Alchemy Dashboard.
 
 ```bash
 # In Claude Code:
-/plugin marketplace add alchemyplatform/alchemy-claude-plugin
+/plugin marketplace add alchemyplatform/alchemy-agent-plugins
 /plugin install alchemy@alchemy
 ```
 

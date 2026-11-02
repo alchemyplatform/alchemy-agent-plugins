@@ -8,7 +8,7 @@
     "email": "support@alchemy.com"
   },
   "homepage": "https://docs.alchemy.com/docs/alchemy-mcp-server",
-  "repository": "https://github.com/alchemyplatform/alchemy-claude-plugin",
+  "repository": "https://github.com/alchemyplatform/alchemy-agent-plugins",
   "license": "MIT",
   "logo": "assets/logo.png",
   "keywords": [
