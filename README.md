@@ -5,7 +5,7 @@ A [Claude Code](https://code.claude.com/) plugin that connects Claude to
 manage your Alchemy apps directly from your agent, backed by the hosted
 [Alchemy MCP server](https://mcp.alchemy.com/mcp).
 
-This repository is a **plugin marketplace**. It contains the Claude Code plugin `alchemy` and a Cursor plugin at `plugins/alchemy-cursor`.
+This repository is a **plugin marketplace**. It contains the Claude Code plugin `alchemy`, a Cursor plugin at `plugins/alchemy-cursor`, and a Gemini CLI extension (`gemini-extension.json` at the root).
 
 ## Install
 
@@ -47,11 +47,29 @@ points at the same hosted server and does not bundle skills or slash commands.
 Submit that directory from this repository at
 https://cursor.com/marketplace/publish.
 
+## Gemini CLI
+
+`gemini-extension.json` makes this repository an MCP-only Gemini CLI extension.
+It points at the same hosted server and does not bundle skills or commands.
+Gemini CLI reads the manifest only from the repository root, so it cannot live
+under `plugins/`.
+
+```bash
+gemini extensions install https://github.com/alchemyplatform/alchemy-agent-plugins
+```
+
+Then run `/mcp auth alchemy` in Gemini CLI to sign in to Alchemy in your browser.
+
+The [Gemini CLI extension gallery](https://geminicli.com/extensions/browse/)
+crawls public repositories that have the `gemini-cli-extension` topic once a day.
+The topics of this repository are set in Terraform (`OMGWINNING/terraform-github`).
+
 ## Repository layout
 
 ```
 .claude-plugin/marketplace.json    # Claude Code marketplace entry
 .cursor-plugin/marketplace.json    # Cursor marketplace entry
+gemini-extension.json              # Gemini CLI extension (MCP only)
 plugins/alchemy/                    # Claude Code plugin
   .claude-plugin/plugin.json        # plugin manifest
   .mcp.json                         # remote MCP server (mcp.alchemy.com)

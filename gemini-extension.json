@@ -1,0 +1,14 @@
+{
+  "name": "alchemy",
+  "version": "0.1.0",
+  "description": "Blockchain data across 100+ chains (token prices, NFTs, transfers, simulation, traces, Solana DAS) and Alchemy app management through Alchemy's hosted MCP server. Read-oriented: no tool signs or sends transactions.",
+  "mcpServers": {
+    "alchemy": {
+      "type": "http",
+      "url": "https://mcp.alchemy.com/mcp",
+      "headers": {
+        "x-alchemy-source": "gemini-extension"
+      }
+    }
+  }
+}
